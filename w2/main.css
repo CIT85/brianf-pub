@@ -8,7 +8,7 @@ body {
 }
 
 a {
-    color: green;
+    color: lightgreen;
 }
 
 a:visited {
@@ -16,5 +16,5 @@ a:visited {
 }
 
 a:hover {
-    color: blue;
+    color: orange;
 }
