@@ -27,12 +27,13 @@ nav {
     text-align: center;
 }
 
-#palette {
+#palette-section {
     text-align: center;
-    border: black;
-    border-width: 3px;
-    padding: 10px;
-    margin: 3px 4px 5px 6px;
+    padding: 10px 20px 10px 20px;
+    margin: 15vw 20vh;
+    background-color: #A3B18A;
+    border: 15px;
+    
 }
 
 .center-image {
@@ -41,4 +42,13 @@ nav {
 
 table, tr, th, td, caption {
     border: 1px solid;
+    color:#DAD7CD;
+    width: 300px
+}
+
+img {
+    border: 10px solid black;
+    border-width: 3px;
+    border-radius: 10px;
+    margin: 10px 20px 25px 30px;
 }
