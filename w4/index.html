@@ -1,55 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Brian Finley">
-        <meta name="description" content="This page will help me learn about HTML and CSS">
-        <title>Week 4 css group work</title>
-        <link rel="icon" href="./favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./main.css" type="text/css">
-    </head>
-    <body>
-        <h1>Why am I taking this course?</h1>
-        <h2>To help me learn more about HTML and CSS, and use it to create and edit web pages.</h2>
-        <nav class="main_navigation">
-            <ul>
-                <li>
-                    <a href="./goals.html">Goals!</a>
-                </li>
-                <li>
-                    <a href="./learn-more.html">Learn More!</a>
-                </li>
-            </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Brian Finley">
+    <meta name="description" content="This page will help me learn about HTML and CSS">
+    <title>Week 4 css group work</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./main.css" type="text/css">
+</head>
+
+<body>
+    <h1>Why am I taking this course?</h1>
+    <h2>To help me learn more about HTML and CSS, and use it to create and edit web pages.</h2>
+    <header>
+        <nav aria-label="primary-navigation" id="primary-navigation">
+            <h3>Navigation</h3>
+            <a href="./index.html">Home</a> |
+            <a href="./goals.html">Goals!</a> |
+            <a href="./learn-more.html">Learn More!</a> |
+            <a href="./colors.html">Palette</a>
         </nav>
+    </header>
+    <hr>
+    <p class="center-image">
         <img src="./img/code-1076536_640.jpg" alt="HTML Programming" title="A screen filled with HTML programming!">
+    </p>
+    <hr>
+    <p class="center-image">
+        <img src="./img/outliner.jpg" alt="Outline of page text">
+    </p>
+    <section id="html">
+        <h2>Why do I think learning HTML is a good idea?</h2>
+        <ol>
+            <li>Web apps are the future!</li>
+            <li>My current job has me making minor changes to a company intranet page, and I'd like to understand it
+                better.</li>
+            <li>HTML is the basic building blocks of the web, so learning the fundamentals is necessary to learn more.
+            </li>
+        </ol>
+
+    </section>
+
+    <hr>
+    <section id="websites">
+        <h2>Websites I visit often!</h2>
+        <table>
+            <tr>
+                <td>
+                    Google
+                </td>
+                <td><a href="https://www.google.com" target="_blank">Google</a></td>
+            </tr>
+            <tr>
+                <td>
+                    YouTube
+                </td>
+                <td><a href="https://www.youtube.com" target="_blank">Youtube</a></td>
+            </tr>
+            <tr>
+                <td>
+                    MDN
+                </td>
+                <td><a href="https://developer.mozilla.org" target="_blank">MDN</a></td>
+            </tr>
+            <tr>
+                <td>
+                    StackOverflow
+                </td>
+                <td><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+    <article id="contact">
+        <h2>Contact Me</h2>
+
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required
+                        autofocus>
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="your secret" required>
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="555-555-5555"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="animal">Favorite Animal:</label>
+                    <input type="text" name="animal" id="animal"  step="10" placeholder = "Dog"
+                        required>
+                </p>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+        <p>Once the submit button is pressed, it gathers up all the data (including unexpected data like browser type, computer OS, etc) and tosses it into a couple of objects, holding several key pairs each for later retrieval.</p>
 
         <hr>
-        <section id="html">
-            <h2>Why do I think learning HTML is a good idea?</h2>
-            <ol>
-                <li>Web apps are the future!</li>
-                <li>My current job has me making minor changes to a company intranet page, and I'd like to understand it better.</li>
-                <li>HTML is the basic building blocks of the web, so learning the fundamentals is necessary to learn more.</li>
-            </ol>
-    
-        </section>
 
-        <hr>
-        <section id="websites">
-            <h2>Websites I visit often!</h2>
-            <ul>
-                <li><a href="https://www.google.com" target="_blank">Google</a></li>
-                <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
-                <li><a href="https://developer.mozilla.org" target="_blank">MDN</a></li>
-                <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
-            </ul>
-    
-        </section>
-        <hr>
+        <footer> &lt;&lt;&lt;<a href="https://github.com/CIT85" target="_blank">CIT-85 GitHub</a>&gt;&gt;&gt; &copy;
+            Brian
+            Finley
+        </footer>
 
-        <hr>
-        &lt;&lt;&lt;<a href="https://github.com/CIT85" target="_blank">CIT-85 GitHub</a>&gt;&gt;&gt; &copy; Brian Finley
-            
-    
-    </body>
+</body>
+
 </html>

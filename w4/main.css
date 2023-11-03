@@ -3,18 +3,40 @@ html {
 }
 
 body {
-    background-color: darkslategray;
-    color: wheat;
+    background-color: #344E41;
+    color: #DAD7CD;
+}
+
+p {
+    text-align: left;
 }
 
 a {
-    color: lightgreen;
+    color: #588157;
 }
 
 a:visited {
-    color: yellow;
+    color: #A3B18A;
 }
 
 a:hover {
-    color: orange;
+    color: #3A5A40;
+}
+
+nav {
+    text-align: center;
+}
+
+#palette {
+    text-align: center;
+    border: black;
+    border-width: 3px;
+}
+
+.center-image {
+    text-align: center;
+}
+
+table, tr, th, td, caption {
+    border: 1px solid;
 }
