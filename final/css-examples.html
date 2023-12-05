@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Class Project using ChatGPT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Brian Finley" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CSS Examples</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS Examples</h1>
+      <nav aria-label="primary-navigation">
+        <h2>Menu</h2>
+        <div id="menu-container">
+          <p>
+            <a href="./index.html">Home</a>
+          </p>
+          <p>
+            <a href="./history.html">History</a>
+          </p>
+          <p>
+            <a href="./html-examples.html">HTML Examples</a>
+          </p>
+          <p>
+            <a href="./css-examples.html">CSS Examples</a>
+          </p>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="image">
+        <h3>CSS Coding?</h3>
+        <figure>
+          <img
+            src="img/ai-css.jpg"
+            alt="AI Bot"
+            title="Created with Bing Image Creator"
+            width="400"
+            height="400"
+          />
+          <figcaption>
+            <p>
+              An AI generated representation of AI creating CSS Code. (Credit:
+              Bing Image Creator)
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+      <div id="css-examples">
+        <section id="css-example1">
+          <h3>Example #1</h3>
+          <p>
+            In this example, I asked ChatGPT to create a table in the colors of
+            the rainbow, using &lt;style&gt;
+          </p>
+          <p>
+            In this example, each &lt;th&gt; and &lt;td&gt; element has inline
+            styles specifying its background color, text color, padding, and
+            text alignment. While using inline styles can make the HTML code
+            less modular, it's a valid approach for small-scale styling. Adjust
+            the styles as needed based on your preferences.
+          </p>
+          <p></p>
+          <table style="border-collapse: collapse; width: 100%">
+            <tr>
+              <th
+                style="
+                  background-color: red;
+                  color: white;
+                  padding: 15px;
+                  text-align: center;
+                "
+              >
+                Red
+              </th>
+              <td
+                style="
+                  background-color: orange;
+                  padding: 15px;
+                  text-align: center;
+                "
+              >
+                Orange
+              </td>
+              <td
+                style="
+                  background-color: yellow;
+                  padding: 15px;
+                  text-align: center;
+                "
+              >
+                Yellow
+              </td>
+              <td
+                style="
+                  background-color: green;
+                  padding: 15px;
+                  text-align: center;
+                "
+              >
+                Green
+              </td>
+              <td
+                style="
+                  background-color: blue;
+                  color: white;
+                  padding: 15px;
+                  text-align: center;
+                "
+              >
+                Blue
+              </td>
+              <td
+                style="
+                  background-color: indigo;
+                  color: white;
+                  padding: 15px;
+                  text-align: center;
+                "
+              >
+                Indigo
+              </td>
+              <td
+                style="
+                  background-color: violet;
+                  color: white;
+                  padding: 15px;
+                  text-align: center;
+                "
+              >
+                Violet
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="css-example2">
+          <h3>Example #2</h3>
+          <p>
+            In this example, I asked ChatGPT to create a 10 row table in the
+            shape of a circle using the colors of the rainbow using
+            &lt;style&gt; (for CSS).
+          </p>
+          <p>
+            Creating a table that perfectly mimics a complete circle with inline
+            styles in HTML is not straightforward due to the square nature of
+            table cells. However, you can create a circular pattern using a
+            large number of rows, each representing a small segment of the
+            circle. Here's a basic example using a simplified approach with 360
+            rows (each representing one degree of a circle) and inline
+            &lt;style&gt; attributes. In this example, each color spans one
+            degree of the circle. This is a simplified representation, and you
+            may need to adjust the number of rows or use more advanced
+            techniques (like CSS transformations) for a more accurate circular
+            shape. For intricate designs, consider using graphic design tools or
+            SVG (Scalable Vector Graphics).
+          </p>
+          <p></p>
+          <table
+            border="1"
+            cellpadding="10"
+            style="
+              border-collapse: collapse;
+              width: 400px;
+              height: 400px;
+              border-radius: 50%;
+              overflow: hidden;
+            "
+          >
+            <!-- 360 rows for a complete circle -->
+            <tr>
+              <td style="background-color: red" colspan="2" rowspan="1"></td>
+            </tr>
+            <tr>
+              <td style="background-color: orange" colspan="2" rowspan="1"></td>
+            </tr>
+            <tr>
+              <td style="background-color: yellow" colspan="2" rowspan="1"></td>
+            </tr>
+            <tr>
+              <td style="background-color: green" colspan="2" rowspan="1"></td>
+            </tr>
+            <tr>
+              <td style="background-color: blue" colspan="2" rowspan="1"></td>
+            </tr>
+            <tr>
+              <td style="background-color: indigo" colspan="2" rowspan="1"></td>
+            </tr>
+            <tr>
+              <td style="background-color: violet" colspan="2" rowspan="1"></td>
+            </tr>
+            <!-- ... repeat for each color and degree -->
+          </table>
+        </section>
+        <br />
+        <section id="css-example3">
+          <h3>Example #3</h3>
+          <p>
+            In this final example, I asked ChatGPT to create a table in the
+            shape of a Christmas Tree using only the colors green and red.
+          </p>
+          <p>
+            In this example: The top of the tree is represented by one row with
+            three cells. Each layer of the tree is represented by a row with an
+            increasing number of cells. The tree base is represented by a row
+            with nine cells. The trunk is represented by a row with three cells.
+            You can adjust the number of cells in each row and the colors as
+            needed for your desired appearance. For more complex and accurate
+            designs, consider using CSS, SVG, or other graphic design tools.
+          </p>
+          <table border="1" cellpadding="10" style="border-collapse: collapse">
+            <!-- Tree top -->
+            <tr>
+              <td colspan="3" style="background-color: green"></td>
+            </tr>
+            <!-- Tree layers -->
+            <tr>
+              <td colspan="5" style="background-color: green"></td>
+            </tr>
+            <tr>
+              <td colspan="7" style="background-color: green"></td>
+            </tr>
+            <!-- Tree base -->
+            <tr>
+              <td colspan="9" style="background-color: green"></td>
+            </tr>
+            <!-- Trunk -->
+            <tr>
+              <td colspan="3" style="background-color: brown"></td>
+            </tr>
+          </table>
+        </section>
+      </div>
+      <br />
+      <section>
+        <h3>Conclusion</h3>
+        <p>
+          I was impressed with the first and second example, but the third
+          example looks like it got lost in translation and needs more work.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; The majority of the content on this site was created
+        in collaboration with me, myself, and
+        <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>
+        &gt;&gt;&gt;
+      </p>
+
+      <p><a href="#">Back to Top</a> | <a href="site.html">Sitemap</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Class Project using ChatGPT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Brian Finley" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>HTML Examples</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>HTML Examples</h1>
+      <nav aria-label="primary-navigation">
+        <h2>Menu</h2>
+        <div id="menu-container">
+          <p>
+            <a href="./index.html">Home</a>
+          </p>
+          <p>
+            <a href="./history.html">History</a>
+          </p>
+          <p>
+            <a href="./html-examples.html">HTML Examples</a>
+          </p>
+          <p>
+            <a href="./css-examples.html">CSS Examples</a>
+          </p>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="image">
+        <h3>Let's Code!</h3>
+        <figure>
+          <img
+            src="img/ai-html.jpg"
+            alt="AI Bot"
+            title="AI Evolution"
+            width="400"
+            height="400"
+          />
+          <figcaption>
+            <p>
+              An AI generated representation of AI creating HTML code. (Credit:
+              Bing Image Creator)
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+      <div id="html-examples">
+        <section id="example1">
+          <h3>Example #1</h3>
+          <p>
+            In this example, I asked ChatGPT to create a table in the colors of
+            the rainbow, without using &lt;style&gt;
+          </p>
+          <p>
+            In this example, I've used the bgcolor attribute to set the
+            background color of each cell, and the color attribute to set the
+            text color for the cells that have white text. Note that the bgcolor
+            attribute is used for background color, and the color attribute is
+            used for text color. While this approach works, it's worth
+            mentioning that using CSS is generally considered a better practice
+            for styling HTML due to its separation of concerns and better
+            maintainability. The examples provided earlier with the
+            &lt;style&gt; tag are more standard and recommended for larger and
+            more maintainable projects.
+          </p>
+           <table border="1">
+            <tr>
+              <th bgcolor="red" color="white">Red</th>
+              <td bgcolor="orange">Orange</td>
+              <td bgcolor="yellow">Yellow</td>
+              <td bgcolor="green">Green</td>
+              <td bgcolor="blue" color="white">Blue</td>
+              <td bgcolor="indigo" color="white">Indigo</td>
+              <td bgcolor="violet" color="white">Violet</td>
+            </tr>
+          </table>
+        </section>
+        <section id="example2">
+          <h3>Example #2</h3>
+          <p>
+            In this example, I asked ChatGPT to create a 10 row table in the
+            shape of a circle using the colors of the rainbow without using
+            style.
+          </p>
+          <p>
+            This example uses the colspan attribute to merge cells horizontally,
+            creating the illusion of a circular pattern. The colors are adjusted
+            accordingly for each row to represent the colors of the rainbow.
+            Note that achieving a perfect circle with HTML tables may not be as
+            flexible as using CSS, but this example provides a basic circular
+            pattern with the given constraints.
+          </p>
+          <table border="1">
+            <tr>
+              <td bgcolor="red" colspan="10" align="center">Red</td>
+            </tr>
+            <tr>
+              <td bgcolor="orange" colspan="9" align="center">Orange</td>
+              <td bgcolor="yellow" align="center">Yellow</td>
+            </tr>
+            <tr>
+              <td bgcolor="yellow" colspan="8" align="center">Yellow</td>
+              <td bgcolor="green" colspan="2" align="center">Green</td>
+            </tr>
+            <tr>
+              <td bgcolor="green" colspan="7" align="center">Green</td>
+              <td bgcolor="blue" colspan="3" align="center">Blue</td>
+            </tr>
+            <tr>
+              <td bgcolor="blue" colspan="6" align="center">Blue</td>
+              <td bgcolor="indigo" colspan="4" align="center">Indigo</td>
+            </tr>
+            <tr>
+              <td bgcolor="indigo" colspan="5" align="center">Indigo</td>
+              <td bgcolor="violet" colspan="5" align="center">Violet</td>
+            </tr>
+            <tr>
+              <td bgcolor="violet" colspan="4" align="center">Violet</td>
+              <td bgcolor="red" colspan="6" align="center">Red</td>
+            </tr>
+            <tr>
+              <td bgcolor="red" colspan="3" align="center">Red</td>
+              <td bgcolor="orange" colspan="7" align="center">Orange</td>
+            </tr>
+            <tr>
+              <td bgcolor="orange" colspan="2" align="center">Orange</td>
+              <td bgcolor="yellow" colspan="8" align="center">Yellow</td>
+            </tr>
+            <tr>
+              <td bgcolor="yellow" align="center">Yellow</td>
+              <td bgcolor="green" colspan="9" align="center">Green</td>
+            </tr>
+          </table>
+        </section>
+        <br />
+        <section id="example3">
+          <h3>Example #3</h3>
+          <p>
+            In this final example, I asked ChatGPT to create a table in the
+            shape of a Christmas Tree using only the colors green and red.
+          </p>
+          <p>
+            Creating a Christmas tree shape using only HTML and without CSS or
+            &lt;style&gt; tags can be a bit challenging due to the limitations
+            of HTML tables. However, you can create a simple representation of a
+            Christmas tree using rows and cells with green and red colors.
+            Here's a basic example. In this example, each row represents a layer
+            of the Christmas tree, and the colspan attribute is used to create
+            the shape. Adjust the colspan values as needed to achieve the
+            desired appearance. Note that this is a basic representation and may
+            not perfectly resemble a Christmas tree due to the constraints of
+            HTML tables.
+          </p>
+          <table border="1" cellpadding="10" id="christmas-tree-table">
+            <tr>
+              <td bgcolor="green" colspan="5"></td>
+            </tr>
+            <tr>
+              <td bgcolor="green" colspan="3"></td>
+              <td bgcolor="red"></td>
+              <td bgcolor="green" colspan="3"></td>
+            </tr>
+            <tr>
+              <td bgcolor="green" colspan="2"></td>
+              <td bgcolor="red" colspan="3"></td>
+              <td bgcolor="green" colspan="2"></td>
+            </tr>
+            <tr>
+              <td bgcolor="green" colspan="1"></td>
+              <td bgcolor="red" colspan="5"></td>
+              <td bgcolor="green" colspan="1"></td>
+            </tr>
+            <tr>
+              <td bgcolor="red" colspan="7"></td>
+            </tr>
+          </table>
+        </section>
+      </div>
+      <section>
+        <h3>Conclusion</h3>
+        <p>
+          Realizing that what I was asking it to do in some cases wasn't easy, I
+          was impressed with the attempts. However, the descriptions made it
+          sound like the code would achieve the desired result when in some
+          cases, like Example 2, it didn't come close. Basic circular pattern?
+          Where? Also, lots of validation errors, since it's using out-dated
+          coding.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; The majority of the content on this site was created
+        in collaboration with me, myself, and
+        <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>
+        &gt;&gt;&gt;
+      </p>
+
+      <p><a href="#">Back to Top</a> | <a href="site.html">Sitemap</a></p>
+    </footer>
+  </body>
+</html>
