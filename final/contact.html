@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Contact Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Brian Finley" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact Me!</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav aria-label="primary-navigation">
+            <h2>Menu</h2>
+            <div id="menu-container">
+                <p>
+                    <a href="./index.html">Home</a>
+                </p>
+                <p>
+                    <a href="./history.html">History</a>
+                </p>
+                <p>
+                    <a href="./html-examples.html">HTML Examples</a>
+                </p>
+                <p>
+                    <a href="./css-examples.html">CSS Examples</a>
+                </p>
+            </div>
+        </nav>
+    </header><br>
+    <div id="background-image">
+        <section id="contact">
+            <h3>I've always been fascinated with AI, and I was curious how far long ChatGPT had become in creating HTML and CSS, given enough proper direction with the write prompts.<br><br>
+                While it's not perfect, it's still pretty impressive and I can't wait to see what a few more years will bring!
+        </h3>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset id="personal-info">
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on"
+                            required>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset id="layout-type">
+                    <legend>Which layout type did you find easier to use?</legend>
+                    <p>
+                        <input type="radio" name="layout" id="flexbox" value="flexbox">
+                        <label for="flexbox">Flexbox</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="layout" id="grid" value="grid">
+                        <label for="grid">Grid</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset id="city">
+                    <legend>What city are you from?</legend>
+                    <p>
+                        <input type="checkbox" name="city" id="fresno" value="fresno">
+                        <label for="fresno">Fresno</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="city" id="visalia" value="visalia">
+                        <label for="visalia">Visalia</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="city" id="clovis" value="clovis">
+                        <label for="clovis">Clovis</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="city" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send Me a Note</legend>
+                    <label id="your-message" for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Type your message here"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; The majority of the content on this site was created
+            in collaboration with me, myself, and
+            <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>
+            &gt;&gt;&gt;
+        </p>
+
+        <p><a href="#">Back to Top</a> | <a href="site.html">Sitemap</a> | <a href="contact.html">Contact Me!</a></p>
+    </footer>
+</body>
+
+</html>

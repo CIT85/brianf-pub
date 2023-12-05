@@ -80,8 +80,18 @@ footer {
     margin: 0px;
     padding: 15px;
     display: block;
-    width: 140px;
+    width: 140px
     }
+
+#contact h3 {
+  background-color: #284B63;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+  display: block;
+  width: 96%;
+
+}
 
   /* This affects all visited links, but the dark color looks terrible in the footer.  Need to change that! */
   a:visited {
@@ -237,7 +247,6 @@ footer a {
 #example3 table {
 width: 40px;
 margin: auto;
-padding: auto;
 }
 
 #alternatives {
@@ -352,6 +361,44 @@ padding: auto;
   background-image: radial-gradient(#FFFFFF, #353535);
 }
 
+#personal-info {
+  background-color: hsla(204, 42%, 27%, 0.6);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#layout-type {
+  background-color: hsla(204, 42%, 27%, 0.6);
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#your-message {
+  background-color: hsla(204, 42%, 27%, 0.6);
+}
+
+#background-image {
+  display: flex;
+  color: white;
+  opacity: 0.8;
+  background-image: url(../img/ai-bot.jpg);
+  background-size: cover;
+}
+
+#contact h3 {
+  opacity: 0.5;
+}
+
+#contact legend {
+  background-color: #3C6E71;
+}
+
+#city label {
+  background-color: hsla(204, 42%, 27%, 0.8);
+}
+
 @media screen and (min-width: 0px) and (max-width: 575px) {
   h1 {
     font-size: 1.5rem;
@@ -380,6 +427,16 @@ padding: auto;
     display: block;
   }
 
+  #background-image {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  #personal-info {
+    width: auto;
+  }
+
 }
 
 @media screen and (min-width: 576px) {
@@ -398,7 +455,6 @@ padding: auto;
 nav p {
   font-size: 1rem;
 }
-
 
   figcaption {
     display: block;
